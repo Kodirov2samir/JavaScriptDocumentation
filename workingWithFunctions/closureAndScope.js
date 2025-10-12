@@ -55,4 +55,32 @@ let second = secondPhrase
 //so basically LexicalEnvironment is object inside if javascript that containes all the variables
 //Lexical environament doesnt exist this term is used to explain how it works
 
+//so with variables it works like this:
+//example:
+let phrase = "HELLO";
+phrase = "WORLD";
+/*
+so when js starts to read the code two operations are done:
+1)creation => js finds out all let const var, functions and their names
+2)Execution => runs the code
+in example above phrase = "World" is located in tdz because the part  "=hello" is not read yet
+but after creation ends and execution starts working "hello" and world will be read and it will be initiolized
+that is why:
+console.log(hi)
+let hi = "hello"
+is an error, because even if js knows that hi exists for log(hi) hi is still uninitiolized   
+*/
 //Step 2 fucntion declaration
+//function expression can be called before its initialization because whenever it is called it will be in ready state to function unlike let
+//the name of the function will be located in LexicalEnvironmnent and this name will be a ready function
+console.log(befort("hi"));
+function befort(hi) {
+  return hi
+}
+//hi
+i
+//it works like this: sees befort immediatelly sees that it is a function declaration and makes this  
+//other function types work the same wit variables
+
+//Note pure function is a function that doesnt use code from the outside
+//closure is when function rememners the variables from the outside
