@@ -113,3 +113,27 @@ step3("tre")
 //2)outer or global
 //in inner the variable name is located and console.log(easily finds it), then outer place where let sterp34 and fucntion step3 are located, and it gains access to the step34 and shows on console
 //Note it will be searching untill it comes to the global lexical Environment and if it doesnt find the error will come 
+
+//step 4 returning function
+//Each function remeber wits lexical environament or the place where it was created
+//Each function has hidden fucn.[[Environment]] property [[Environment]] is a outer lexical environment for a function:
+let exam = "hello"
+function ret() {
+  console.log(exam);
+}
+//here the [[Environment]] for res is global lexical environment which is let exam = hello
+//it goes to global because it couldnt find the variable exam in ints(fucntion ret) inner environment
+
+
+//Garbage collection:
+function f() {
+  let value = 123;
+
+  return function() {
+    alert(value);
+  }
+}
+
+let g = f(); // пока существует функция g, value остается в памяти
+
+g = null; // ...и теперь память очищена.
