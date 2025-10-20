@@ -4,7 +4,7 @@ function sum(a,b) {
   return a + b
 }
 console.log(sum(10,20,402,8439,354,493))//30
-//however only first towo will be read
+//however only first two will be read
 
 //but if we really need the rest we could use ...
 function sum1(a,b,...rest) {
@@ -13,7 +13,7 @@ function sum1(a,b,...rest) {
 console.log(sum1(10,20,402,8439,354,493))//9808
 //so here i literally said take the rest ti the massive
 
-//Note the rest parameter should be at the enfd otherwise error
+//Note the rest parameter should be at the end otherwise error
 
 //////////////////////////////////////////arguments///////////////////////////////////////////////////////////////
 //In old times when there was no rest, people use d "arguments" to take the rest of array

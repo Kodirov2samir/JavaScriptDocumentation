@@ -42,7 +42,7 @@ console.log(makeFunctionWork(10));//10
 console.log(makeFunctionWork(542));//487.8
 //new function can be dynamic, dynamic means it can work even if it doesnt know exactly what upcomming function does, simple function always do the code that was written to it, it already knows what it does,however new function can be "adaptive"
 //So simply we use new function when we dont know what upcomming function does
- //Firestly lets see what is minifier
+ //Firstly lets see what is minifier
  //Minifier is a programm that shrinks the code, by removing comments, spaces, and the most important, making short names for local variables, for example if it was "let hello", after minifier it may become "let a".
 //What would happen if new function had the access to the outer environment?
 // function makeFunc() {
