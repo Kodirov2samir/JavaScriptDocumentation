@@ -4,7 +4,7 @@
   const hello = "hello world"
   console.log(hello);//"hello world"
 }
-//tgis  code block
+//this  code block
 // console.log(hello);//error
 
 //////////////////////////////////////////Nested functions///////////////////////////////////////////////////////////
@@ -52,7 +52,7 @@ let second = secondPhrase
 //secondPhrase is found because there is a link for outer code inside of Lexical environment 
 }
 //the part inside of {} is block lexical environment
-//so basically LexicalEnvironment is object inside if javascript that containes all the variables
+//so basically LexicalEnvironment is an object inside of javascript that contains all the variables
 //Lexical environament doesnt exist this term is used to explain how it works
 
 //so with variables it works like this:

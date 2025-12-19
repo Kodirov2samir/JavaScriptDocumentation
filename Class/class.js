@@ -74,4 +74,31 @@ const wow = new saveClass(9,9)
 wow.mult()
 // and cas also be nfe => named function expression
 //const hello = class Hello{}
+
 //getters and setters
+//Getters and setters are mostly used to control or validate the information
+class ProtectedClass {
+  constructor(name, word) {
+    this._name = name
+    this.word = word
+  }
+
+  get name() {
+    return this._name
+  }
+
+  set name(value) {
+    if (value.length <= 2) {
+      console.log("The name is too short")
+      return
+    }
+    this._name = value
+  }
+
+  say() {
+    console.log(this.word, this.name)
+  }
+}
+
+const user = new ProtectedClass("samir", "hello")
+user.say()
